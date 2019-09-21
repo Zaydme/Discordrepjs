@@ -1,0 +1,17 @@
+{
+  "name": "discordrep.js",
+  "version": "0.0.3",
+  "description": "DiscordRep API",
+  "license": "MIT",
+  "repository": "Zaydme/Discordrepjs",
+  "author": "911aka911",
+  "main": "index.js",
+  "keywords": [
+    "discordrep",
+    "discordrep.js",
+    "api"
+  ],
+  "dependencies": {
+     "cloudscraper": "^4.1.4"
+  }
+}
