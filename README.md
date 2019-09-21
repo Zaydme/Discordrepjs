@@ -1,4 +1,6 @@
 # discordrep.js
+![size](https://img.shields.io/bundlephobia/min/discordrep.js)
+![npm](https://img.shields.io/npm/v/discordrep.js)
 
 DiscordRep API
 

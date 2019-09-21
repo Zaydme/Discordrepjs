@@ -9,14 +9,14 @@ class DRep {
         return req('bans', id)
     }
     getWarn(id) {
-        return req('bans', id)
+        return req('warns', id)
     }
 };
 
 
 async function req(route, id) {
     let data;
-    await cloudscraper.get(`http://localhost:3000/api/${route}/${id}`)
+    await cloudscraper.get(`https://discordrep.com/api/${route}/${id}`)
         .then(function(body) {
             data = JSON.parse(body)
 
