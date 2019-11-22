@@ -4,6 +4,10 @@
 
 DiscordRep API
 
+
+Q: how to get API key?
+A: Use the command `-api generate` in our discord server
+
 ## Install
 
 ```
@@ -15,7 +19,7 @@ $ npm install discordrep.js
 ### Example
 ```js
 const DiscordRep = require("discordrep.js");
-const dRep = new DiscordRep();
+const dRep = new DiscordRep("YOUR_API_KEY_HERE");
 
 async function getUserData(id) {
     let userData = await dRep.getUser(id);
