@@ -21,21 +21,34 @@ $ npm install discordrep.js
 const DiscordRep = require("discordrep.js");
 const dRep = new DiscordRep("YOUR_API_KEY_HERE");
 
-async function getUserData(id) {
-    let userData = await dRep.getUser(id);
+async function fetchRep(id) {
+    let userData = await dRep.getRep(id);
     console.log(userData)
 }
 
+fetchRep('538855659714641960')
 
-getUserData('1')
+ /*
+ console output:
+ {
+   "id": "538855659714641960",
+   "upvotes": 13,
+   "downvotes": 0,
+   "reputation": 3,
+   "xp":12409
+}
+*/
 
 ```
 
 ```js
-getUser('id')
 
-getBan('id')
+getRep('id') // gets user's reputation
 
-getWarn('id')
+getUser('id') // gets general info exp: bio/donator...
+
+getBan('id') // Checks if user is banned and returns ban info
+
+getWarn('id') // Checks if user is warned and returns warn info
 
 ```

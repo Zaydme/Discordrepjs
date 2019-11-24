@@ -6,6 +6,9 @@ class DRep {
       this.key = key;
     }
 
+    getRep(id) {
+        return req('rep', id, this.key);
+    }
     getUser(id) {
         return req('u', id, this.key);
     }
@@ -23,7 +26,6 @@ async function req(route, id, key) {
     await cloudscraper.get(`https://discordrep.com/api/${route}/${id}?authorization=${key}`)
         .then(function(body) {
             data = JSON.parse(body)
-
         })
         .catch(function(err) {
             if (err.statusCode == 404 || err.statusCode == 429 || err.statusCode == 401) {
