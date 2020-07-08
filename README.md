@@ -1,4 +1,7 @@
-# discordrep.js
+# This package has been deprecated
+#### This package will no longer work after V3 update, please use [@drep/api](https://www.npmjs.com/package/@drep/api)
+
+## discordrep.js
 ![size](https://img.shields.io/bundlephobia/min/discordrep.js)
 ![npm](https://img.shields.io/npm/v/discordrep.js)
 
